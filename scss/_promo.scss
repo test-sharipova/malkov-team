@@ -1,0 +1,40 @@
+.promo {
+    padding: 56px 0 136px;
+    background: linear-gradient(180deg, #000f68 16.62%, #3878e2 77.33%);
+    .container {
+        position: relative;
+    }
+    &__title {
+        margin: 0;
+        max-width: 600px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 100%;
+        color: #fff;
+    }
+    &__info {
+        padding: 32px 40px 32px 30px;
+        border: 1px solid #e7ebf2;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: -179%;
+        gap: 50px;
+        
+        .btn_main {
+            margin-left: auto;
+            width: 230px;
+        }
+        &__text {
+            max-width: 528px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #353e4f;
+            margin: 0;
+        }
+    }
+}

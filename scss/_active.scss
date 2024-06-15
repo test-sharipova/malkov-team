@@ -1,0 +1,18 @@
+.active {
+    padding: 104px 0 112px;
+    color: #fff;
+    background: url(../img/active_bg.jpg) no-repeat center right/cover;
+    &__content {
+        max-width: 547px;
+    }
+    .title {
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 127%;
+        margin: 0 0 32px;
+    }
+}

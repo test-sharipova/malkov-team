@@ -1,0 +1,81 @@
+.work {
+    padding: 167px 0 53px;
+    background: linear-gradient(#fff 59.3%, #F0F6FA 40.7%);
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-auto-rows: 400px;
+    }
+    &__item {
+        position: relative;
+        text-decoration: none;
+        border: 1px solid #e8ebf2;
+        padding: 40px;
+        color: #3f444e;
+        background-color: #fff;
+        transition: background-color .3s, color .3s;
+        &:hover {
+            background-color: var(--accent);
+            color: #fff;
+            .heading {
+                transition: color .3s;
+                color: #fff;
+            }
+            .work__list {
+                li {
+                    &::before {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .heading {
+            margin-bottom: 20px;
+        }
+        &-cons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid var(--accent-secondary);
+        }
+    }
+    &__link {
+        position: absolute;
+        bottom: 48px;
+        right: 48px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #f0f6fa;
+        cursor: pointer;
+        background-image: url(../img/next.svg);
+        background-position: center;
+        background-size: 8px 14px;
+        background-repeat: no-repeat;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 12px;
+            line-height: 150%;
+            &::before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background: var(--accent);
+                position: absolute;
+                left: 7px;
+                top: 6px;
+            }
+        }
+    }
+}
