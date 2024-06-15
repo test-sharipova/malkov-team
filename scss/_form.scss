@@ -51,6 +51,10 @@
         font-weight: 600;
         font-size: 16px;
         color: #08142b;
+        transition: border-color .3s;
+        &:hover {
+            border-color: var(--accent);
+        }
     }
     .social {
         margin: 32px 0 54px;

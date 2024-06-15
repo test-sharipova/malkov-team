@@ -37,6 +37,10 @@ body {
     height: 56px;
     cursor: pointer;
     font-family: inherit;
+    transition: background-color .3s;
+    &:hover {
+        background-color: #1659bc;
+    }
 }
 .btn_second {
     padding: 8px 40px;
@@ -52,6 +56,11 @@ body {
     border: none;
     cursor: pointer;
     font-family: inherit;
+    transition: background-color .3s;
+    &:hover {
+        background-color: #f0f6fa;
+        color: #08142a;
+    }
 }
 .btn_transparent {
     border: 1px solid var(--accent);
@@ -66,6 +75,12 @@ body {
     text-decoration: none;
     cursor: pointer;
     font-family: inherit;
+    transition: background-color .3s, color .3s, border-color .3s;
+    &:hover {
+        color: #fff;
+        background-color: var(--accent);
+        border-color: var(--accent);
+    }
 }
 .btn_white {
     padding: 8px 40px;
@@ -136,6 +151,9 @@ body {
     mask-size: 34px 34px;
     mask-repeat: no-repeat;
     mask-position: center;
+    &:focus {
+        opacity: .7;
+    }
     &-vk {
         background-color: #2787F5;
         mask-image: url(../img/vk.svg);
