@@ -4,7 +4,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-        grid-auto-rows: 400px;
+        grid-auto-rows: minmax(400px, 1fr);
     }
     &__item {
         position: relative;

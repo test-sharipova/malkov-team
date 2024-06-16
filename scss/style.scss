@@ -180,7 +180,10 @@ body {
     display: flex;
     justify-content: flex-start;
 }
-
+.body_fixed {
+    position: fixed;
+    width: 100%;
+}
 
 
 @import '_vari.scss';
@@ -194,3 +197,4 @@ body {
 @import '_form.scss';
 @import '_articles.scss';
 @import '_footer.scss';
+@import '_media.scss';

@@ -1,5 +1,5 @@
 header {
-    padding: 27px;
+    padding: 27px 0;
 }
 .header {
     &__wrapper {
@@ -20,6 +20,11 @@ header {
         color: #0e3881;
         text-decoration: none;
     }
+}
+.logo {
+    img {
+        max-width: 100%;
+    };
 }
 nav {
     min-height: 100%;
@@ -149,21 +154,48 @@ nav {
         position: relative;
         width: fit-content;
         transition: color .3s;
-        // &::after {
-        //     content: '';
-        //     width: 0%;
-        //     height: 6px;
-        //     background-color: #0e3881;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     transition: width .3s;
-        // }
+       
         &:hover {
             color: #0e3881;
-            // &:after {
-            //     width: 100%;
-            // }
+           
+        }
+    }
+}
+.hamburger {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    z-index: 2;
+    top: 36px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    span {
+        width: 100%;
+        height: 3px;
+        background: var(--bold);
+        display: block;
+        transition: all .3s;
+        border-radius: 3px;
+    }
+    &_active {
+        top: 20px;
+        z-index: 3;
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg) translateY(9px);
+                background: var(--regular);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg) translateY(-9px);
+                background: var(--regular);
+            }
         }
     }
 }
