@@ -17,3 +17,21 @@ const menu = document.querySelector('.menu'),
             body.classList.toggle('body_fixed');
         });
     });
+
+    //маска для телефона
+
+let element = document.querySelectorAll('.phone');
+let maskOptions = {
+    mask: '0(000)000-00-00'
+};
+for (let i = 0; i < element.length; i++) {
+    let mask = IMask(element[i], maskOptions);
+}
+
+//modal
+$('.consult').on('click', function(){
+    $('.overlay, .modal').fadeIn();
+});
+$('.modal__close').on('click', function(){
+    $('.overlay, .modal').fadeOut();
+});

@@ -11,7 +11,13 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 
+    <script defer src="js/jquery-3.6.3.min.js"></script>
+    <script defer src="js/imask.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>	
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script defer src="js/animation.js"></script>
     <script defer src="js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -50,13 +56,13 @@
         <section class="promo">
             <div class="container">
                 <h1 class="promo__title">
-                    Интернет решения для бизнеса
+                    <span>Интернет</span> <span>решения</span> <span>для бизнеса</span>
                 </h1>
                 <div class="promo__info">
                     <p class="promo__info__text">
                         Связываем воедино бизнес-процессы в компании: рекламу, сайт, CRM, интеграции. Занимайтесь бизнесом — маркетинг и IT мы берём на себя.
                     </p>
-                    <button type="button" class="btn_main">Связаться с нами</button>
+                    <button type="button" class="btn_main consult anim-scale">Связаться с нами</button>
                     <div class="social">
                         <a href="#" class="soc soc-vk">
                             <span class="visually-hidden">Вконтакте</span>
@@ -138,7 +144,7 @@
                             Подберем эффективные инструменты для развития вашего бизнеса
                         </p>
                         
-                        <button type="button" class="btn_second">Получить консультацию</button>
+                        <button type="button" class="btn_second consult">Получить консультацию</button>
                     </div>
                 </div>
             </div>
@@ -186,7 +192,7 @@
                         <img src="img/wins_img4.svg" alt="">
                     </div>
                     <div class="wins__cons__text">Подберем эффективные инструменты для развития вашего бизнеса</div>
-                    <button type="button" class="btn_main">Получить консультацию</button>
+                    <button type="button" class="btn_main consult">Получить консультацию</button>
                 </div>
             </div>
            
@@ -310,7 +316,7 @@
                     <p class="active__subtitle">
                         в подарок к основной услуге
                     </p>
-                    <button type="button" class="btn_white">Обсудить проект</button>
+                    <button type="button" class="btn_white consult">Обсудить проект</button>
                </div>
             </div>
         </section>
@@ -341,11 +347,11 @@
                         <fieldset>
                             <label for="name">
                                 <span>Ваше имя</span>
-                                <input type="text" id="name" class="form__input">
+                                <input type="text" id="name" class="form__input" required>
                             </label>
                             <label for="phone">
                                 <span>Ваш телефон</span>
-                                <input type="text" id="phone" class="form__input phone">
+                                <input type="text" id="phone" class="form__input phone" required>
                             </label>
                         </fieldset>
                         <button type="submit" class="btn_main">Обсудить проект</button>
@@ -455,5 +461,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal -->
+     <div class="overlay"></div>
+    <div class="modal">
+        <button type="button" class="modal__close"></button>
+        <p class="heading">Оставьте ваши контакты, и мы свяжемся с вами в ближайшее время</p>
+        <form action="#" class="form__form">
+            
+            <fieldset>
+                <label for="name1">
+                    <span>Ваше имя</span>
+                    <input type="text" id="name1" class="form__input" required>
+                </label>
+                <label for="phone1">
+                    <span>Ваш телефон</span>
+                    <input type="text" id="phone1" class="form__input phone" required>
+                </label>
+            </fieldset>
+            <button type="submit" class="btn_main">Обсудить проект</button>
+        </form>
+    </div>
 </body>
 </html>
