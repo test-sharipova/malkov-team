@@ -154,6 +154,9 @@ body {
     &:focus {
         opacity: .7;
     }
+    &:hover {
+        opacity: .7;
+    }
     &-vk {
         background-color: #2787F5;
         mask-image: url(../img/vk.svg);
@@ -183,6 +186,9 @@ body {
 .body_fixed {
     position: fixed;
     width: 100%;
+}
+.mobile {
+    display: none;
 }
 
 

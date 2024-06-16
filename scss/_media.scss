@@ -325,9 +325,21 @@
             
         }
     }
+    footer {
+        padding: 40px 0 0;
+    }
     .footer {
         &__wrapper {
             grid-template-columns: 1fr;
+            text-align: center;
+            gap: 20px;
+            .social {
+                justify-content: center;
+            }
+        }
+        &__bottom {
+            grid-template-columns: 1fr;
+            gap: 16px;
         }
     }
 }

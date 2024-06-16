@@ -23,6 +23,10 @@ footer {
         color: #353e4f;
         text-decoration: none;
         cursor: pointer;
+        transition: color .3s;
+        &:hover {
+            color: var(--accent);
+        }
     }
     &__list {
         padding: 0;
