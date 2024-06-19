@@ -1,12 +1,12 @@
 function animation() {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (document.documentElement.clientWidth > 767) {
+    
         gsap.from('.promo__title span', {
         opacity: 0,
         stagger: 0.3,
     });
-    }
+    
   
     
 

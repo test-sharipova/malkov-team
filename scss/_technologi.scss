@@ -1,6 +1,12 @@
 .technologi {
     padding-top: 104px;
     background: linear-gradient( #fff 77%, #f0f6fa 23%);
+    .title {
+        span {
+            max-width: 616px;
+            display: block
+        };
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

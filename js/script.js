@@ -14,10 +14,14 @@ const menu = document.querySelector('.menu'),
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
-            body.classList.toggle('body_fixed');
+            if (document.documentElement.clientWidth < 767) {
+                body.classList.toggle('body_fixed');
+            }
         });
     });
 
+    
+    
     //маска для телефона
 
 let element = document.querySelectorAll('.phone');
