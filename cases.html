@@ -284,7 +284,7 @@
                         Компания
                     </p>
                     <ul class="footer__list">
-                        <li><a href="#" class="footer__link">Кто мы</a></li>
+                        <li><a href="about.html" target="_blank" class="footer__link">Кто мы</a></li>
                         <li><a href="#" class="footer__link">Что делаем</a></li>
                         <li><a href="work.html" target="_blank" class="footer__link">Как работаем</a></li>
                         <li><a href="cases.html" class="footer__link">Чем гордимся</a></li>
@@ -302,5 +302,25 @@
             </div>
         </div>
     </footer>
+    <!-- modal -->
+    <div class="overlay"></div>
+    <div class="modal">
+        <button type="button" class="modal__close"></button>
+        <p class="heading">Оставьте ваши контакты, и мы свяжемся с вами в ближайшее время</p>
+        <form action="#" class="form__form">
+            
+            <fieldset>
+                <label for="name1">
+                    <span>Ваше имя</span>
+                    <input type="text" id="name1" class="form__input" required>
+                </label>
+                <label for="phone1">
+                    <span>Ваш телефон</span>
+                    <input type="text" id="phone1" class="form__input phone" inputmode="numeric" required>
+                </label>
+            </fieldset>
+            <button type="submit" class="btn_main">Обсудить проект</button>
+        </form>
+    </div>
 </body>
 </html>

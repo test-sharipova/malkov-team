@@ -8,8 +8,7 @@
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-
-    <title>Адаптив. Адаптируем бизнес в интернете</title>
+    <title>Кто мы</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +18,14 @@
 
     <script defer src="js/jquery-3.6.3.min.js"></script>
     <script defer src="js/imask.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>	
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script defer src="js/animation.js"></script>
-    <script defer src="js/script.js"></script>
     
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header__wrapper">
-                <a href="#" class="logo" aria-current="page">
+                <a href="index.html" class="logo">
                     <img src="img/logo.svg" alt="Логотип Адаптив">
                 </a>
                 <nav>
@@ -46,7 +42,7 @@
                             </ul>
                         </li>
                         <li class="menu__item menu__item__link"><a href="work.html" target="_blank" class="menu__link">Как работаем</a></li>
-                        <li class="menu__item menu__item__link"><a href="cases.html" target="_blank" class="menu__link">Чем гордимся</a></li>
+                        <li class="menu__item menu__item__link"><a href="cases.html" class="menu__link">Чем гордимся</a></li>
                         <li class="menu__item menu__item__link"><a href="#" class="menu__link">Как связаться</a></li>
                         <li class="mobile">
                             <a href="tel:+79608731112" class="header__phone">+7 960 873 11 12</a>
@@ -62,7 +58,7 @@
         <section class="promo">
             <div class="container">
                 <h1 class="promo__title">
-                    <span>Интернет</span> <span>решения</span> <span>для бизнеса</span>
+                    Веб-сайты. Боты. Автоматизация
                 </h1>
                 <div class="promo__info">
                     <p class="promo__info__text">
@@ -80,7 +76,16 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="grid-descr">
+           <div class="container">
+                <div class="grid-descr__wrapper">
+                    <h2 class="title">Специализируемся <br> на разработке</h2>
+                    <p class="fs_16 lh_150">Студия появилась из команды разработчиков. Наш руководитель, Андрей, — разработчик с десятилетним стажем. Перед тем как возглавить студию веб-разработки, отработал в найме на разных позиция — от инженера технической поддержки до full-stack разработчика. Именно он будет вести ваш проект, распределит задачи между специалистами и проконтролирует их выполнение. </p>
+                </div>
+           </div>
+
+        </section>
+        <section class="work work_pt104 work_bgfff">
             <div class="container">
                 <h2 class="title title-bb">
                     Что делаем
@@ -155,55 +160,20 @@
                 </div>
             </div>
         </section>
-        <section class="wins">
+        <section class="grid-descr grid-descr_pt50">
             <div class="container">
-                <h2 class="title title-bb">Как работаем</h2>
-                <div class="wins__wrapper">
-                    <div class="wins__item">
-                        <div class="wins__img">
-                            <img src="img/wins_img1.svg" alt="">
-                        </div>
-                        <p class="heading">
-                            Прозрачная смета
-                        </p>
-                        <p class="fs_16 lh_150">
-                            Перед началом проекта мы согласовываем с вами смету, в которой прописываем количество затрачиваемого времени и стоимость для каждого этапа.
-                        </p>
-                    </div>
-                    <div class="wins__item">
-                        <div class="wins__img">
-                            <img src="img/wins_img2.svg" alt="">
-                        </div>
-                        <p class="heading">
-                            Соблюдаем сроки
-                        </p>
-                        <p class="fs_16 lh_150">
-                            Мы осознаем обязательства перед вами и серьезно относимся к вашему времени, поэтому выполняем работу в срок, указанный в договоре. 
-                        </p>
-                    </div>
-                    <div class="wins__item">
-                        <div class="wins__img">
-                            <img src="img/wins_img3.svg" alt="">
-                        </div>
-                        <p class="heading">
-                            Оперативная связь
-                        </p>
-                        <p class="fs_16 lh_150">
-                            Нам важно получать от вас обратную связь и быть уверенными, что все ведет к желаемому результату. Поэтому мы регулярно созваниваемся с вами для обсуждения хода проекта.
-                        </p>
-                    </div>
-                </div>
-                <div class="wins__cons">
-                    <div class="wins__cons__img">
-                        <img src="img/wins_img4.svg" alt="">
-                    </div>
-                    <div class="wins__cons__text">Подберем эффективные инструменты для развития вашего бизнеса</div>
-                    <button type="button" class="btn_main consult">Получить консультацию</button>
-                </div>
+                 <div class="grid-descr__wrapper">
+                     <h2 class="title">От продвижения <br> до получения первой прибыли</h2>
+                     <p class="fs_16 lh_150"><span class="d_block mb_12">
+                        Сайт приносит результат, только когда на него идёт необходимый поток целевых посетителей. А он создаётся поисковым продвижением или через рекламные кампании. 
+
+                     </span>
+                        <span>Мы умеем находить связки из оффера, рекламного канала и посадочной страницы, которые приводят клиентов. С опорой на экспертизу в разработке это делать гораздо проще. </span></p>
+                 </div>
             </div>
-           
-        </section>
-        <section class="cases">
+ 
+         </section>
+         <section class="cases">
             <div class="container">
                 <h2 class="title">
                     Чем гордимся
@@ -313,19 +283,6 @@
                 <a href="#" class="btn_transparent">Смотреть все проекты</a>
             </div>
         </section>
-        <section class="active">
-            <div class="container">
-               <div class="active__content">
-                    <h2 class="title">
-                        Проведем бесплатный SEO-аудит сайта
-                    </h2>
-                    <p class="active__subtitle">
-                        в подарок к основной услуге
-                    </p>
-                    <button type="button" class="btn_white consult">Обсудить проект</button>
-               </div>
-            </div>
-        </section>
         <section class="form">
             <div class="container">
                 <div class="form__wrapper">
@@ -365,41 +322,16 @@
                 </div>
             </div>
         </section>
-        <section class="articles">
+        <section class="next-page next-page_bg">
             <div class="container">
-                <h2 class="title">
-                    Чем делимся
-                </h2>
-                <div class="articles__wrapper">
-                    <div class="articles__item articles__item-bottom">
-                        <div class="articles__content">
-                            <p class="articles__date">
-                                12.11.2022
-                            </p>
-                            <p class="heading">
-                                Виды рекламы в интернете
-                            </p>
-                            <p class="fs_16 lh_150">Создаем уникальный дизайн для продающих лендингов, сайтов, онлайн-платформ.</p>
-                            <a href="#" class="btn_transparent">Читать статью </a>
-                        </div>
-                        <div class="articles__img">
-                            <img src="img/articles_img1.jpg" alt="" width="600" height="300">
-                        </div>
+                <div class="next-page__wrapper">
+                    <div class="next-page__content">
+                        <p class="fs_16 lh_150 mb_4">Читайте следующий раздел</p>
+                        <h2 class="title">Что делаем</h2>
                     </div>
-                    <div class="articles__item articles__item-top">
-                        <div class="articles__content">
-                            <p class="articles__date">
-                                12.11.2022
-                            </p>
-                            <p class="heading">
-                                Виды рекламы в интернете
-                            </p>
-                            <p class="fs_16 lh_150">Создаем уникальный дизайн для продающих лендингов, сайтов, онлайн-платформ.</p>
-                            <a href="#" class="btn_transparent">Читать статью </a>
-                        </div>
-                        <div class="articles__img">
-                            <img src="img/articles_img2.jpg" alt="" width="600" height="300">
-                        </div>
+                    <div class="next-page__text">
+                        <p class="fs_16 lh_150 mb_30">Рассказываем о том, что помогает нам вывести ваш бизнес на новый уровень.</p>
+                        <a href="#" class="btn_main">Перейти</a>
                     </div>
                 </div>
             </div>
@@ -452,7 +384,7 @@
                         <li><a href="about.html" target="_blank" class="footer__link">Кто мы</a></li>
                         <li><a href="#" class="footer__link">Что делаем</a></li>
                         <li><a href="work.html" target="_blank" class="footer__link">Как работаем</a></li>
-                        <li><a href="cases.html" target="_blank" class="footer__link">Чем гордимся</a></li>
+                        <li><a href="cases.html" class="footer__link">Чем гордимся</a></li>
                         <li><a href="articles.html" target="_blank" class="footer__link">Чем делимся</a></li>
                         <li><a href="#" class="footer__link">Как связаться</a></li>
                     </ul>
@@ -467,9 +399,8 @@
             </div>
         </div>
     </footer>
-
     <!-- modal -->
-     <div class="overlay"></div>
+    <div class="overlay"></div>
     <div class="modal">
         <button type="button" class="modal__close"></button>
         <p class="heading">Оставьте ваши контакты, и мы свяжемся с вами в ближайшее время</p>

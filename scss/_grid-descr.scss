@@ -1,0 +1,11 @@
+.grid-descr {
+    padding-top: 167px;
+    &__wrapper {
+        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &_pt50 {
+        padding-top: 50px;
+    }
+}
