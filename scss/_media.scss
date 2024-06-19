@@ -355,10 +355,16 @@
             }
             .articles__img {
                 order: 1;
+                height: 200px;
             }
             
         }
+        &.pt_64 {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
+
     footer {
         padding: 40px 0 0;
     }
