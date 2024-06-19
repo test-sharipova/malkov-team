@@ -155,6 +155,9 @@
     .btn_main, .btn_transparent, .btn_second, .btn_white {
         height: 48px;
     }
+    header {
+        padding: 20px 0;
+    }
     .menu {
         position: fixed;
         
@@ -212,8 +215,12 @@
             transform: translateX(-50%);
         }
     }
+    .logo {
+        width: 160px;
+    }
     .hamburger {
         display: flex;
+        top: 38px;
     }
     .submenu {
         position: relative;
