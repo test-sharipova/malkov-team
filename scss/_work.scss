@@ -1,3 +1,4 @@
+//секция на главной
 .work {
     padding: 167px 0 53px;
     background: linear-gradient(#fff 59.3%, #F0F6FA 40.7%);
@@ -78,6 +79,40 @@
                 left: 7px;
                 top: 6px;
             }
+        }
+    }
+}
+
+//страница как работаем 
+.work {
+    
+    &-place {
+        margin-top: -146px;
+        padding-top: 184px;
+        background-image: url(../img/work-place-bg.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        &__content {
+            max-width: 671px;
+            margin-bottom: 98px;
+            .btn_main {
+                width: fit-content;
+            }
+            &-white {
+                flex-grow: 1;
+                background-color: #fff;
+                padding: 100px 100px 0;
+                max-width: 100%;
+                margin-bottom: 0;
+                .fs_16 {
+                    max-width: 600px;
+                }
+            }
+        }
+        &__wrapper {
+            display: flex;
+            align-items: flex-end;
         }
     }
 }

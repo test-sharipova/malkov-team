@@ -5,6 +5,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         box-shadow: 0 24px 48px 0 rgba(83, 106, 164, 0.06);
+       
     }
     &__item {
         background-color: #fff;
@@ -53,4 +54,8 @@
 }
 .pt_164 {
     padding-top: 164px;
+    background-color: #fff;
+    .wins__item {
+        border: 1px solid #e8ebf2;  
+    }
 }

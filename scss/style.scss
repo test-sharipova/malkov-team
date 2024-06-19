@@ -188,6 +188,19 @@ body {
     width: 100%;
 }
 
+//margins 
+.mb_4 {
+    margin-bottom: 4px;
+}
+.mb_16 {
+    margin-bottom: 16px;
+}
+.mb_24 {
+    margin-bottom: 24px;
+}
+.mb_30 {
+    margin-bottom: 30px;
+}
 
 
 .mobile {
@@ -208,4 +221,6 @@ body {
 @import '_footer.scss';
 @import '_modal.scss';
 @import '_animation.scss';
+@import '_technologi.scss';
+@import '_next-page.scss';
 @import '_media.scss';

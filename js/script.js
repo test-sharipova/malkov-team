@@ -32,6 +32,6 @@ for (let i = 0; i < element.length; i++) {
 $('.consult').on('click', function(){
     $('.overlay, .modal').fadeIn();
 });
-$('.modal__close').on('click', function(){
+$('.modal__close, .overlay').on('click', function(){
     $('.overlay, .modal').fadeOut();
 });

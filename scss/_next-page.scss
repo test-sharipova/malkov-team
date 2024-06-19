@@ -1,0 +1,16 @@
+.next-page {
+    padding: 46px 0 0;
+    &__wrapper {
+        background: linear-gradient(180deg, #000f68 16.62%, #3878e2 77.33%);
+        color: #fff;
+        padding: 80px 80px 74px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .title {
+        color: #fff;
+    }
+    .btn_main {
+        width: fit-content;
+    }
+}
