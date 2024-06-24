@@ -97,7 +97,7 @@ body {
     font-family: inherit;
 }
 
-//font
+//font, text
 .title {
     margin: 0;
     font-weight: 700;
@@ -116,6 +116,16 @@ body {
     font-size: 22px;
     line-height: 127%;
     color: #08142b;
+}
+
+.accent-text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0;
 }
 
 .fs_16 {
@@ -192,6 +202,9 @@ body {
 .mb_4 {
     margin-bottom: 4px;
 }
+.mb_8 {
+    margin-bottom: 8px;
+}
 .mb_12 {
     margin-bottom: 12px;
 }
@@ -230,4 +243,6 @@ body {
 @import '_technologi.scss';
 @import '_next-page.scss';
 @import '_grid-descr.scss';
+@import '_context.scss';
+@import '_clients.scss';
 @import '_media.scss';

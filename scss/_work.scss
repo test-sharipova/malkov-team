@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
         grid-auto-rows: minmax(400px, 1fr);
+        box-shadow: 0 24px 48px 0 rgba(83, 106, 164, 0.06);
     }
     &__item {
         position: relative;

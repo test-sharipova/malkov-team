@@ -231,6 +231,9 @@
             }
         }
     }
+    .title-bb {
+        padding-bottom: 20px;
+    }
     .header {
         &__phone {
             display: none;
@@ -441,6 +444,38 @@
         padding-top: 40px;
         &__wrapper {
             grid-template-columns: 1fr;
+        }
+    }
+    .context {
+        padding-top: 60px;
+        &__list {
+            margin-top: 32px;
+        }
+        &__item {
+            grid-template-columns: 1fr;
+            padding-top: 16px;
+            
+            &__img {
+                width: 80px;
+                height: 80px;
+                padding: 16px;
+            }
+        }
+        &__content {
+            padding: 16px 16px 24px;
+        }
+        
+    }
+    .clients {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        &__item {
+            flex-grow: 1;
+            width: 50%;
+            height: 140px;
         }
     }
 }

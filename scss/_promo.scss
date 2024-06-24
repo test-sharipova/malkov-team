@@ -11,6 +11,9 @@
         font-size: 56px;
         line-height: 100%;
         color: #fff;
+        &_mw792 {
+            max-width: 792px;
+        }
     }
     &__info {
         padding: 32px 40px 32px 30px;
@@ -41,6 +44,7 @@
             bottom: -166%;
         }
     }
+   
 }
 .anim-scale {
     transform: scale(1);
